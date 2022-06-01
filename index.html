@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>自由にお絵描きtime</h1>
+        <!-- <canvas>タグはこのタグで終わり -->
+        <canvas id="canvas" width="500" height="300"></canvas>
+
+        <!-- .options>.color>p -->
+        <div class="options">
+            <div class="color">
+                <p>好きな色を選んでネ！</p>
+                <a href="" class="black" data-color="#000000"></a>
+                <a href="" class="red" data-color="#dc143c"></a>
+                <a href="" class="yellow" data-color="#f0e68c"></a>
+                <a href="" class="white" data-color="#f5f5f5"></a>
+                <a href="" class="green" data-color="#3cb371"></a>
+                <a href="" class="brown" data-color="#a52a2a"></a>
+                
+            </div>
+
+            <div class="weight">
+                <p>ペンの太さを選んでネ！</p>
+                <!-- a.[data-weight]*3 -->
+                <a href="" class="big" data-weight="10">大</a>
+                <a href="" class="medium" data-weight="5">中</a>
+                <a href="" class="small" data-weight="1">小</a>
+            </div>
+
+            <!-- button#clear -->
+            <button id="clear">全べて消す</button>
+            <a id="download" href="#" download="canvas.jpg">ダウンロード</a>
+            <a href="javascript:twitText()">ついーとする</a>
+        </div>
+    </main>
+
+    <footer>
+    
+    </footer>
+
+</body>
+</html>
